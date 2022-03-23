@@ -3,7 +3,8 @@ import React from 'react'
 const TableHeader = () => {
   // boilerplate table header functional component
   return (
-    <thead>
+    
+    <thead> 
       <tr>
         <th>Name</th>
         <th>URL</th>
@@ -19,9 +20,9 @@ const TableBody = (props) => {
   const rows = props.linkData.map((row, index) => {
     return (
       <tr key={index}>
-        <td>{row.name}</td>
+        <td>{row.linkName}</td>
         <td>
-          <a href={row.URL}>{row.URL}</a>
+          <a href={row.URL}>{row.url}</a>
         </td>
         <td>
           <button onClick={() => props.removeLink(index)}>Delete</button>
@@ -34,9 +35,14 @@ const TableBody = (props) => {
 }
 
 const Table = (props) => {
-  {
-    /*TODO - return <table> component, TableHeader and TableBody  and pass props!*/
-  }
+  {/*TODO - return <table> component, TableHeader and TableBody  and pass props!*/}
+ 
+  return (
+  <div>
+  {TableHeader()}
+  {TableBody(props)}
+  </div>
+)
 }
 
 export default Table
