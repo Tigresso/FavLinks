@@ -1,7 +1,7 @@
 import React from 'react'
 import Table from './Table';
 import Form from './Form';
-
+import '../styles/LinkContainer.css'
 class LinkContainer extends React.Component {
   constructor(props) {
     super(props)

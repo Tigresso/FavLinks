@@ -38,10 +38,11 @@ const Table = (props) => {
   {/*TODO - return <table> component, TableHeader and TableBody  and pass props!*/}
  
   return (
-  <div>
+
+  <table>
   {TableHeader()}
   {TableBody(props)}
-  </div>
+  </table>
 )
 }
 
